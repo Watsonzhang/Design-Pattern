@@ -61,5 +61,36 @@
         分析慢查询日志 mysqldumpslow slow.log
         锁定时间最长的10条sql语句 mysqldumpslow -s al-n 10 slow.log
         设置日志输出为文件或者表 set log_output ="file"
-    3.2.3 查询日志 记录了所有mysql数据库请求的信息e                   
-           
+    3.2.3 查询日志 记录了所有mysql数据库请求的信息
+        开启查询日志 set  global general_log="on"
+        查询文件位置 show variables like "general_log_file"
+    3.2.4 二进制日志 binlog
+        二进制日志记录了对数据执行更改的所有操作
+        但是不包括select和show这类操作
+        主要作用：
+            1.恢复
+            2.复制
+        开启二进制日志 需要在启动参数时制定 log_bin= 
+        默认文件名 bin_log.000001
+        相关配置参数
+            max_binlog_size
+            binlog_cache_size
+            sync_binlog 如果想获得最大的高可用 可以设置为1 同步写磁盘方式记录二进制日志
+            binglog_do-db
+            binglog_ignore_db
+            log_slave_update
+            binlog_format
+            查看工具 mysqlbinlog
+3.3 套接字文件
+3.4 pid文件
+3.5 表结构定义文件
+3.6 InnoDB存储引擎文件
+    3.6.1 表空间文件
+    3.6.2 重做日志文件
+        redo log
+         主要功能：记录每个页的更改的物理情况
+         
+                     
+            
+        
+                   
