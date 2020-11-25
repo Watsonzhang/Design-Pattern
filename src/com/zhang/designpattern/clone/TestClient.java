@@ -1,4 +1,4 @@
-package com.zhang.clone;
+package com.zhang.designpattern.clone;
 
 /**
  * @Author: zhangwei
