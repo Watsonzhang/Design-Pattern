@@ -9,4 +9,10 @@ public class RefineAbstraction extends Abstraction {
     public RefineAbstraction(Implementor implementor) {
         super(implementor);
     }
+
+    @Override
+    public void operation() {
+        implementor.operation();
+    }
+
 }

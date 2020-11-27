@@ -7,7 +7,7 @@ package com.zhang.designpattern.bridge;
  */
 public class TestClient {
     public static void main(String[] args) {
-        Abstraction abstraction = new RefineAbstraction(new BImplementor());
+        Abstraction abstraction = new RefineAbstraction(new AImplementor());
         abstraction.operation();
     }
 }

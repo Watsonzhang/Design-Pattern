@@ -10,7 +10,5 @@ public abstract class Abstraction {
     public Abstraction(Implementor implementor) {
         this.implementor = implementor;
     }
-    public void operation(){
-        implementor.operation();
-    }
+   abstract public void operation();
 }
