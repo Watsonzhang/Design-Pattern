@@ -15,5 +15,7 @@ public class Rectangle extends Shape {
     @Override
     public void draw() {
         drawLine();
+        drawLine();
+        drawLine();
     }
 }

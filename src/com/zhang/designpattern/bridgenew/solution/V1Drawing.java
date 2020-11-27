@@ -7,7 +7,7 @@ import com.zhang.designpattern.bridgenew.solution.util.DP1;
  * @Description:
  * @Date:Create：2020/11/27 下午4:25
  */
-public class V1Drawing extends Drawing {
+public class V1Drawing implements Drawing {
     @Override
     public void drawLine() {
         DP1.draw_a_line();

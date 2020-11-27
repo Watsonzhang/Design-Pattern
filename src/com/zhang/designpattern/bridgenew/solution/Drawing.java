@@ -5,7 +5,7 @@ package com.zhang.designpattern.bridgenew.solution;
  * @Description:
  * @Date:Create：2020/11/27 下午4:22
  */
-public abstract class Drawing {
-    abstract public void drawLine();
-    abstract public void drawCircle();
+public interface Drawing {
+      void drawLine();
+      void drawCircle();
 }
