@@ -9,6 +9,7 @@ public class LowResFact extends ResFactory {
     @Override
     public DisplayDriver getDisplayPlayDriver() {
         return new LRDD();
+
     }
 
     @Override
