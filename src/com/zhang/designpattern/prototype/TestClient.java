@@ -10,7 +10,7 @@ public class TestClient {
         Resume resume1 = new Resume();
         resume1.setName("a");
         WorkExperience bj = new WorkExperience("北京云上", 10011);
-        resume1.setWork(bj);
+       resume1.setWork(bj);
         Resume resume2 = (Resume)resume1.clone();
         System.out.println(resume1);
         System.out.println(resume2);
